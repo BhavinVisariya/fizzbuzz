@@ -13,4 +13,4 @@ app.use((err, req, res, next) => {
   return res.json({ error: err.message });
 });
 
-app.listen(4000);
+app.listen(process.env.PORT || 3000);
